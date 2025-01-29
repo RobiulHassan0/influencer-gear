@@ -178,8 +178,7 @@ main{
     }
     header, 
     nav ul,
-    .banner-section,
-    .sponsors{
+    .banner-section{
         padding: 0 20px;
         margin: 40px 0;
     }
@@ -207,7 +206,7 @@ main{
     .banner-title{
         font-size: 2.5rem;
     }
-    .description{
+    .description, nav ul li{
         font-weight: normal;
         font-size: 1.25rem;
     }
@@ -215,7 +214,10 @@ main{
         width: 100%;
         padding: 18px 0px;
     }
-
+    .content-btn{
+        font-size: 2rem;
+        padding: 10px 30px;
+    }
     main{
         margin: 0 auto;
         width: 100%; 
@@ -225,6 +227,7 @@ main{
         justify-content: space-around;
         flex-wrap: wrap;
         border: none;
+       
     }
     .sponsors img{
         width: 18%;
