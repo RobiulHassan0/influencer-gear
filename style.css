@@ -169,3 +169,65 @@ main{
     }
 
 }
+
+/* For Tablate Device */
+
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header{
+        padding: 20px 20px;
+        text-align: center;
+    }
+    nav
+    {
+        flex-direction: column;
+    }
+    nav > ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+    .banner-content, .sponsors{
+        padding: 0;
+        margin-top: 50px;
+    }
+    .banner-title{
+        font-size: 1.75rem;
+    }
+    .description{
+        font-weight: normal;
+    }
+    .banner-img{
+        width: 100%;
+        padding: 6px 0px;
+    }
+
+    main{
+        margin: 0 auto;
+        width: 100%; 
+    }
+    .sponsors{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        border: none;
+        margin-bottom: 500px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .sponsors img{
+        width: 18%;
+        margin-right: 5px;
+    }
+}
