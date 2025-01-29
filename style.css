@@ -174,42 +174,46 @@ main{
 
 @media screen and (min-width: 577px) and (max-width: 992px){
     header{
-        padding: 20px 20px;
         text-align: center;
     }
-    nav
-    {
+    header, 
+    nav ul,
+    .banner-section,
+    .sponsors{
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+
+    nav{
         flex-direction: column;
     }
+
     nav > ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
-    nav ul li{
-        margin: 0;
+    nav ul, 
+    .sponsors{
+        gap: 20px;
     }
+
     .banner-section{
         flex-direction: column-reverse;
-        gap: 20px;
-        padding: 0 10px;
-        margin-top: 50px;
     }
-    .banner-content, .sponsors{
-        padding: 0;
-        margin-top: 50px;
+    .banner-section{
+        gap: 50px;
     }
+    .site-name,
     .banner-title{
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
     .description{
         font-weight: normal;
+        font-size: 1.25rem;
     }
     .banner-img{
         width: 100%;
-        padding: 6px 0px;
+        padding: 18px 0px;
     }
 
     main{
@@ -220,11 +224,7 @@ main{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: 20px;
         border: none;
-        margin-bottom: 500px;
-        box-sizing: border-box;
-        padding: 0 20px;
     }
     .sponsors img{
         width: 18%;
